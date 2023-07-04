@@ -25,9 +25,9 @@ void ModifyTime(tm* time_ptr, int hour_mod, int min_mod, int sec_mod);
 void GetTimeString(bool mil_time, std::string* time_str, tm* time_ptr);
 
 int main() {
-    int choice = 0; // user choice
+    int choice = 0;
     // Modifier, used to apply user set modifications to the time.
-    int hour_mod = 0; 
+    int hour_mod = 0;
     int min_mod = 0;
     int sec_mod = 0;
     // Both strings are used at once in PrintClock to print 12h and 24h clocks.
@@ -78,9 +78,8 @@ void Menu(int choice, int* hour_mod, int* min_mod, int* sec_mod) {
             *sec_mod = 0;
         }
         break;
-    case 4: 
+    case 4:
       exit(0);
-    
     default:
         std::cout << "Invalid Choice! Please choose from menu." << std::endl;
         break;
